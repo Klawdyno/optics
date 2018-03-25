@@ -1,17 +1,359 @@
+/*General Rules*/
+
 html{
   font-family: Helvetica;
   font-size: 18px;
   line-height: 1.4;
 }
 
-
-.top-bar{
-  background-color: cadetblue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.site-container{
+  width: 960px;
 }
 
-.logo{
+/*banner*/
+
+#banner {
+	height: 540px;
+	height: 30rem;
+	background-image: url("../images/glasses-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  padding-top: 18px;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+
+/*top bar*/
+
+.top-bar{
+  color: white;
+  background-color: cadetblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img{
+  height: 27px;
+  height: 1.5rem;
+  padding-left: 36px;
+  padding-left: 2rem;
+}
+
+.logo span{
+  padding: 18px;
+  padding: 1rem;
+}
+
+/*Navigation*/
+
+nav{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+padding-right: 36px;
+padding-right: 2rem;
+}
+
+nav span{
+padding: 18px;
+padding: 1rem;
+}
+
+.menu{
+  display: none;
+  padding: 18px;
+  padding: 1rem;
+  padding-right: 36px;
+  padding-right: 2rem;
+}
+
+/*Banner Title*/
+
+.slogan{
+  margin-top: 180px;
+  margin-top: 10rem;
+  margin-right: -36px;
+  margin-right: -2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+
+}
+
+.slogan h1 {
+
+  font-weight: bold;
+  font-size: 36px;
+  font-size: 2rem;
+  padding: 27px 90px;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  line-height: 1.2;
+}
+
+/*Images section*/
+
+.section2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+
+.images{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+margin: 54px auto;
+margin: 3rem auto;
+}
+
+.group{
+  width: 90px;
+  width: 5rem;
+  height: 144px;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 0 54px;
+  margin: 0 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.group img{
+  max-width: 63px;
+  max-width: 3.50rem;
+  height: auto;
+  display: block;
+}
+
+.container-text{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+
+/*Text section*/
+
+.content-text{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+
+}
+
+
+.group2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 35%;
+  margin-right: 5%;
+}
+.group2 span{
+padding-top: 18px;
+padding-top: 1rem;
+}
+
+
+h2 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  padding: 9px 22.5px;
+  padding: 0.5rem 1.25rem;
+  max-width: 180px;
+  max-width: 10rem;
+}
+
+/*Footer*/
+
+footer{
+  margin-top: 90px;
+  margin-top: 5rem;
+  padding: 72px;
+  padding: 4rem;
+  background-color: azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer img{
+  height: 27px;
+  height: 1.5rem;
+  margin-right: 18px;
+  margin-right: 1rem;
+}
+
+
+/*Responsive Design*/
+
+@media only screen and (max-width: 1024px){
+
+  .site-container{
+    width: 100%;
+  }
+
+  #banner{
+    padding-top: 0rem;
+    height: 22rem;
+  }
+
+  .slogan{
+    margin-top: 5rem;
+    margin-right: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+
+  }
+
+  .slogan h1 {
+
+    font-weight: bold;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #banner {
+  	height: 17rem;
+  	background-position: 20%;
+
+  }
+
+  .slogan{
+    margin-top: 9rem;
+    width: 100%;
+  }
+
+  .slogan h1 {
+    width: 100%;
+    padding: 1rem auto;
+    font-size: 1rem;
+  }
+
+  .top-bar nav,
+  .logo span{
+    display: none;
+  }
+
+  .images,
+   .content-text{
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+.images{
+  margin: 3.77rem auto;
+}
+
+.group{
+height: auto;
+}
+
+.group span{
+  font-size: 0.77rem;
+  padding: 1.54rem 0rem;
+}
+
+  .group2 {
+    width: 100%;
+  }
+
+  h2 {
+    max-width: 100%;
+  }
+
+  .group2 span{
+    font-size: 0.77rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  }
+
+  footer{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+width: 100%;
+  }
+
+  footer span{
+display: none;
+  }
+  .menu{
+    display: block;
+  }
 
 }
